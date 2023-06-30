@@ -7,14 +7,14 @@ const fetch = require('node-fetch');
 const chalk = require("chalk");
 const arciotext = (require("./api/arcio.js")).text;
 
-console.log(chalk.green("[Qwaekactyl] Files loading..."));
+console.log(chalk.green("[ZeDASH] Files loading..."));
 
-console.log(chalk.green("[Qwaekactyl] Files loaded..."));
+console.log(chalk.green("[ZeDASH] Files loaded..."));
 
 // Load settings.
 
 const settings = require("./settings.json");
-console.log(chalk.green("[Qwaekactyl] Settings loading..."));
+console.log(chalk.green("[ZeDASH] Settings loading..."));
 
 const defaultthemesettings = {
   index: "index.ejs",
@@ -26,7 +26,7 @@ const defaultthemesettings = {
   variables: {}
 };
 
-console.log(chalk.green("[Qwaekactyl] Settings loaded..."));
+console.log(chalk.green("[ZeDASH] Settings are loaded...................."));
 
 module.exports.renderdataeval =
   `(async () => {
@@ -71,27 +71,27 @@ module.exports.renderdataeval =
 
 const db = require("./db.js");
 
-console.log(chalk.green("[Qwaekactyl] Database loading..."))
+console.log(chalk.green("[ZeDASH] DB (DATABASE) loading..."))
 
 module.exports.db = db;
 
-console.log(chalk.green("[Qwaekactyl] Database loaded..."))
+console.log(chalk.green("[ZeDASH] DB (DATABASE) loaded..."))
 
 // Load websites.
 
 const express = require("express");
-console.log(chalk.green("[Qwaekactyl] api's loading..."))
+console.log(chalk.green("[ZeDASH] api's loading..."))
 const app = express();
-console.log(chalk.green("[Qwaekactyl] api's loaded..."))
+console.log(chalk.green("[ZeDASH] api's loaded..."))
 
 // Load express addons.
 
 const expressWs = require('express-ws')(app);
-console.log(chalk.green("[Qwaekactyl] Express addons loading..."))
+console.log(chalk.green("[ZeDASH] addons loading..."))
 const ejs = require("ejs");
 const session = require("express-session");
 const indexjs = require("./index.js");
-console.log(chalk.green("[Qwaekactyl] Express addons loaded..."))
+console.log(chalk.green("[ZeDASH] addons loaded..."))
 
 
 // Sets up saving session data.
